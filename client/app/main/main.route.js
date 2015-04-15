@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('minimalApp')
+angular.module('demoapp')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/main/main.html',
+        templateUrl: '/app/main/main.html',
         controller: 'MainCtrl'
       });
   });
