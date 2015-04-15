@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // API routes
-app.use('/api/things', require('./api/thing'));
+app.use('/api/books', require('./api/books'));
 
 // UI routes (all others)
 app.get('/*', function (req, res) {
