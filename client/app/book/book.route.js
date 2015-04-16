@@ -5,7 +5,7 @@ angular.module('bookapp')
     $routeProvider
       .when('/', {
         templateUrl: '/app/book/book.html',
-        controller: 'BooksController',
+        controller: 'BookController',
         controllerAs: 'books'
       });
   });
