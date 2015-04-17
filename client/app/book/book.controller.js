@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('bookapp')
-  .controller('BookController', bookController);
+  .controller('BookController', BookController);
 
-function bookController(bookDataService, $log) {
+function BookController(bookDataService, $log) {
   var vm = this;
 
   // variables and functions available in view
