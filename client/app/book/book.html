@@ -6,7 +6,7 @@
   </ul>
   <form name="newBookForm" ng-submit="books.addBook()" >
     <label for="newBook">New book:</label>
-    <input type="text" name="newBook" ng-model="books.newBook.title" required/>
+    <input type="text" name="newBook" id="newBook" ng-model="books.newBook.title" required/>
     <input type="submit"/>
   </form>
   <p>This is the content from main.html page.</p>
