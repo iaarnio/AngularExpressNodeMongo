@@ -4,10 +4,10 @@
   <ul ng-repeat="book in books.bookList">
     <li>{{ book.title }} <a ng-click="books.deleteBook(book)" href="">delete</a></li>
   </ul>
-  <form ng-submit="books.addBook()">
+  <form name="newBookForm" ng-submit="books.addBook()" >
     <label for="newBook">New book:</label>
-    <input type="text" ng-model="books.newBook.title" id="newBook"/>
-    <input type="submit" id="submit" value="Submit"/>
+    <input type="text" name="newBook" ng-model="books.newBook.title" required/>
+    <input type="submit"/>
   </form>
   <p>This is the content from main.html page.</p>
   <p>This is where your application view specific elements should be defined.</p>
