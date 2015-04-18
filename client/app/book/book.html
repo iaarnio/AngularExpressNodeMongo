@@ -1,6 +1,6 @@
 <!-- This partial view file. This will be inserted by AngularJS to index.html in place of <ng-view> element -->
 <div>
-  <h2>Bookshelf</h2>
+  <h3>Bookshelf content:</h3>
   <ul ng-repeat="book in books.bookList">
     <li>{{ book.title }} <a ng-click="books.deleteBook(book)" href="">delete</a></li>
   </ul>
@@ -9,6 +9,4 @@
     <input type="text" name="newBook" id="newBook" ng-model="books.newBook.title" required/>
     <input type="submit"/>
   </form>
-  <p>This is the content from main.html page.</p>
-  <p>This is where your application view specific elements should be defined.</p>
 </div>
