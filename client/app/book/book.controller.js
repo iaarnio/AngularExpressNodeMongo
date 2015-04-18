@@ -9,7 +9,7 @@ function BookController(bookDataService, $log) {
   // variables and functions available in view
   vm.bookList = [];
   vm.newBook = {};
-  vm.getBooks = getBooks;
+  vm.listBooks = getBooks;
   vm.addBook = addBook;
   vm.deleteBook = deleteBook;
 
@@ -20,7 +20,7 @@ function BookController(bookDataService, $log) {
   }
 
   function getBooks() {
-    bookDataService.getBooks()
+    bookDataService.listBooks()
      .then(updateBookList, errorHandler)
   }
 
@@ -29,7 +29,7 @@ function BookController(bookDataService, $log) {
   }
 
   function addBook() {
-    if (vm.newBook === '') {
+    if (!vm.newBook) {
       return;
     }
     bookDataService.addBook(vm.newBook)

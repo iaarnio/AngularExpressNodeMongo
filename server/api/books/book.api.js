@@ -2,7 +2,7 @@
 
 var Book = require('./book.model.js');
 
-exports.getBooks = function (req, res) {
+exports.listBooks = function (req, res) {
   console.log('debug: listBooks called');
   Book.find(function (err, books) {
     if (err) {
