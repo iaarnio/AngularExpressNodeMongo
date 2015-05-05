@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('bookapp', ['ngRoute'])
+angular.module('bookapp')
   .config(function ($routeProvider) {
     $routeProvider.otherwise({
       redirectTo: '/'
