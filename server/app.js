@@ -15,7 +15,6 @@ var app = express();
 var server = http.createServer(app);
 var port = 3000;
 
-app.use(express.static('/client'));
 app.use(logger('dev'));
 
 app.use(bodyParser.json());
@@ -25,9 +24,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/books', require('./api/books'));
 
 // UI routes (all others)
-app.get('/*', function (req, res) {
-  res.sendfile('client' + req.url);
-});
+app.use('/', express.static('./client'));
+
 
 // Connect to database
 mongoose.connect('mongodb://localhost/demoapp', function (err) {
