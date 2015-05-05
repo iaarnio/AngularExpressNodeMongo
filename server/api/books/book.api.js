@@ -3,7 +3,6 @@
 var Book = require('./book.model.js');
 
 exports.listBooks = function (req, res) {
-  console.log('debug: listBooks called');
   Book.find(function (err, books) {
     if (err) {
       return handleError(res, err);
@@ -13,7 +12,6 @@ exports.listBooks = function (req, res) {
 };
 
 exports.createBook = function (req, res) {
-  console.log('debug: createBook called');
   var book = new Book();
   book.title = req.body.title;
   book.save(function (err, book) {
@@ -25,7 +23,6 @@ exports.createBook = function (req, res) {
 };
 
 exports.deleteBook = function (req, res) {
-  console.log('debug: deleteBook called');
   Book.findById(req.params.id, function (err, book) {
     if (err) {
       return handleError(res, err);
