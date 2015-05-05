@@ -1,13 +1,12 @@
 {
   "name": "minimal",
   "version": "0.0.0",
-  "main": "server/app.js",
+  "authors": [ "Ilari Aarnio" ],
   "dependencies": {
     "express": "~4.0.0",
     "body-parser": "~1.5.0",
     "morgan": "^1.5.1",
     "mongoose": "~3.8.8"
-//    "connect-mongo": "^0.4.1"
   },
   "devDependencies": {
     "http-server": "^0.6.1"
