@@ -10,7 +10,7 @@ The app has been stripped down to bare minimum.
 It is not mean to be a starting point for building of new apps.
 There are much better scaffolding options that like angular-fullstack.
 
-This application dot contain unit tests, error handling etc.
+This application dot contain unit tests, error handling and it pollutes global namespace etc.
 It's just demonstrating how the different building bricks play together.
 My main point here is to show Express/Angular routing play together and also UI/API separation.
 
