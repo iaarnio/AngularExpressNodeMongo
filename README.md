@@ -14,27 +14,28 @@ This application dot contain unit tests, error handling etc.
 It's just demonstrating how the different building bricks play together.
 My main point here is to show Express/Angular routing play together and also UI/API separation.
 
-Application architecture:
+####Application architecture:
+
 ![app architecture](https://github.com/iaarnio/AngularExpressNodeMongo/blob/master/images/architecture.png?raw=true "Application architecture")
 
 ## Usage
 
-Install:
-=======
-NOTE! As a prerequisite use need to have mongo DB installed and running on (default) port 27017.
+####Install:
+
+NOTE! As a prerequisite use need to have mongo DB installed and running on (default) port 27017.   
 For instructions how to install and use MongoDB check [https://www.mongodb.org/downloads](https://www.mongodb.org/downloads)
 
-Build application with command:
+####Build application with command:
 ```
 npm install
 ```
 
-Run application with command:
+####Run application with command:
 ```
 npm start
 ```
 
-Access app using browser:
+####Access app using browser:
 ```
 http://localhost:3000
 ```
