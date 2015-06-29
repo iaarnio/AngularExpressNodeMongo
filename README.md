@@ -19,15 +19,17 @@ Application architecture:
 
 ## Usage
 
-NOTE! As a prerequirement use need to have mongo DB installed and running on (default) port 27017.
-
-
 Install:
+=======
+NOTE! As a prerequisite use need to have mongo DB installed and running on (default) port 27017.
+For instructions how to install and use MongoDB check [https://www.mongodb.org/downloads](https://www.mongodb.org/downloads)
+
+Build application with command:
 ```
 npm install
 ```
 
-Start server:
+Run application with command:
 ```
 npm start
 ```
